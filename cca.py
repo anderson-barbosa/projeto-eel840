@@ -15,9 +15,9 @@ def main():
 	width = len(cipherImage)
 	height = len(cipherImage[0])
 
-	# chosenImage1 = [[0 for j in range(height)] for i in range(width)]
-	# save_bmp_image(chosenImage1, header, "chosen_ciphered_image_1.bmp")
-	# os.system("python decrypt2.py chosen_ciphered_image_1.bmp keystream.bmp")
+	chosenImage1 = [[0 for j in range(height)] for i in range(width)]
+	save_bmp_image(chosenImage1, header, "chosen_ciphered_image_1.bmp")
+	os.system("python decrypt2.py chosen_ciphered_image_1.bmp keystream.bmp")
 	keystream, header = read_bmp_image("keystream.bmp")
 
 	phl = [[0 for j in range(height)] for i in range(width)]
