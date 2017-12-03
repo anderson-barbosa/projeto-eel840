@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''Este programa criptografa uma imagem no formato BMP de 256 cores.
+
+Para utilizar este programa, devem ser passados como parâmetros na linha de comando,
+respectivamente, o nome da imagem a ser criptografada e o nome que deve ter a imagem
+cifrada, incluindo a extensão .bmp. Exemplo:
+
+python encrypt.py plain_image.bmp ciphered_image.bmp
+
+'''
 
 import numpy as np
 from scipy.integrate import odeint
