@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''Este programa realiza a criptoanálise de uma imagem criptografada pelo
+programa encrypt.py e utiliza o ataque do texto-limpo escolhido.
+
+Para utilizar este programa, devem ser passados como parâmetros na linha de comando,
+respectivamente, o nome da imagem a ser recuperada e o nome que deve ter a 
+imagem-limpa, incluindo a extensão .bmp. Exemplo:
+
+python cpa.py ciphered_image.bmp plain_image.bmp
+
+'''
 
 import numpy as np
 from scipy.integrate import odeint
