@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''Este programa descriptografa uma imagem criptografada pelo programa encript.py.
+
+Para utilizar este programa, devem ser passados como parâmetros na linha de comando,
+respectivamente, o nome da imagem a ser descriptografada e o nome que deve ter a 
+imagem-limpa, incluindo a extensão .bmp. Exemplo:
+
+python decrypt.py ciphered_image.bmp plain_image.bmp
+
+'''
 
 import numpy as np
 from scipy.integrate import odeint
